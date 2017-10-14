@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.background{
+	color: baby-blue;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 120px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+ 
+p{
+	float: center;
+	margin-top: 50px;
+  
+}
+.login {
+  float:right ;
+  margin-right: 40px;
+  margin-top: 70px;
+}
+
+body {
+  background-color: linen;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+
+  
+
+</style>
+</head>
+</html>
