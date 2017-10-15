@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 30%;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+	
+	}
+.v0{
+
+   position: absolute;
+    right: 60%;  
+ 
+    }	
+.vl{
+    border-left: 2px solid green;
+    height: 300px;
+    position: absolute;
+    left: 50%;  
+	text-align:center;
+ 
+    }
+	.button{
+	right:20px;
+	position:fixed;
+	bottom:20px;
+}
+
+progress{
+float:right;
+
+}
+
+	
+</style>
+<img src="image/WagMatchLogoSmall.jpg" width="300" height="130" /></a>	
+<p align = "center" >
+Experience with Dogs/ Animals 
+<p>
+<progress value="22" max="100">
+</progress>
+<div class = "v0">
+<p>
+1. Is it this your first dog?
+</p>
+<div id="slidecontainer"  class = "slidecontainer">
+  Yes<input type="range" min="1" max="3"  class="slider" id="myRange">No
+  <p>value:<span id="demo"></span></p> 
+  </div>
+
+<script>
+var slider0 = document.getElementById("myRange");
+var output0 = document.getElementById("demo");
+output0.innerHTML = slider0.value;
+
+slider0.oninput = function() {
+  output0.innerHTML = this.value;
+}
+</script>
+</div>
+
+<div class="vl"/>
+<p>
+2. Do you live with animals?
+</p>
+
+<div id="slidecontainer2" class= "slidecontainer">
+  Yes<input type="range" min="1" max="3" class="slider" id="myRange1">No
+  <p>value:<span id="demo1"></span></p> 
+  </div>
+</div>
+<script>
+var slider = document.getElementById("myRange1");
+var output = document.getElementById("demo1");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<div class = "button">
+<a href="quiz2.html"><button type = "button" bottom = "20px">Next</button> </a>
+<div>
+
+
+
